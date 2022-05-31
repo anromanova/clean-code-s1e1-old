@@ -45,6 +45,7 @@ var createNewTaskElement = function (taskString) {
     editButton.className = "button edit-task__button";
 
     deleteButton.className = "button delete-task__button";
+    deleteButtonImg.setAttribute("alt", "delete")
     deleteButtonImg.className = "delete-task__button-img";
     deleteButtonImg.src = './remove.svg';
     deleteButton.appendChild(deleteButtonImg);
@@ -86,7 +87,7 @@ var editTask = function () {
 
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('.edit-task__button');
+    var editInput = listItem.querySelector('.task__input-text');
     var label = listItem.querySelector(".task__label");
     var editBtn = listItem.querySelector(".edit-task__button");
     var containsClass = listItem.classList.contains("edit-mode");

@@ -103,10 +103,6 @@
 }
 
 /* New Task */
-.task__label {
-  display: block;
-  margin: 0 0 20px;
-}
 
 .new-task {
   width: 318px;
